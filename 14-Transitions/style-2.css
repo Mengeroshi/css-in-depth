@@ -1,0 +1,22 @@
+.container{
+    position: relative;
+    height: 60px;
+}
+
+.box{
+    position: absolute;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    background-color: hsl(130, 50%, 50%);
+}
+.box--linear{transition: all 1s linear;}
+.box--ease-out{transition: all 1s ease-out;}
+.box--ease-in{transition: all 1s steps(3);}
+
+
+
+
+.container:hover .box{
+    left:400px;
+}
